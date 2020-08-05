@@ -1,0 +1,15 @@
+html
+    head
+        title component
+        link(rel="stylesheet" , href="custom.css")
+    body
+        div.container
+            each product in products
+                div.item
+                    img(src="https://image.thanhnien.vn/1080/uploaded/chauyen/2020_03_30/meoc_lyyo.jpeg", alt="").image
+                    div.infor 
+                        div Name: #{product.name}
+                        div desciption: #{product.description}
+                        div price: #{product.price}
+                    button add to cart
+            
